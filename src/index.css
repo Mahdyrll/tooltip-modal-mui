@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button {
+        @apply font-bold text-black
+    }
+
+    .box-title {
+        @apply text-[#C6C5D0] font-rs-medium text-[15px] 
+    }
+
+    .box-style {
+        @apply bg-[#FFFFFF12] rounded-[20px] py-4 px-6 mt-4
+    }
+
+    .box-words {
+        @apply font-normal text-sm text-[#CBCBCB] leading-5 mt-2
+    }
+}
+
+@layer base {
+    @font-face {
+        font-family: 'regular';
+        src: url('./assets/fonts/RobotoSlab-Regular.ttf');
+    }
+
+    @font-face {
+        font-family: 'medium';
+        src: url('./assets/fonts/RobotoSlab-Medium.ttf');
+    }
+
+    @font-face {
+        font-family: 'semibold';
+        src: url('./assets/fonts/RobotoSlab-SemiBold.ttf');
+    }
+}
